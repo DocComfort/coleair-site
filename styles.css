@@ -15,6 +15,48 @@ header {
     text-align: center;
 }
 
+/* Logo styling (replaces previous H1 in header) */
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Hero call-to-action buttons */
+.hero-cta {
+    margin-top: 20px;
+}
+
+.hero-cta a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Book Now button inherits main brand color */
+.hero-cta .cta-btn {
+    background-color: #003e6b;
+    color: #fff;
+}
+
+.hero-cta .cta-btn:hover {
+    background-color: #005998;
+}
+
+/* Call Now button uses a contrasting, warm tone to draw attention */
+.hero-cta .call-btn {
+    background-color: #ed7f00;
+    color: #fff;
+}
+
+.hero-cta .call-btn:hover {
+    background-color: #c26a00;
+}
+
 nav {
     display: flex;
     justify-content: center;
