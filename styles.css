@@ -170,3 +170,55 @@ footer {
         flex: 1 1 100%;
     }
 }
+
+/* New sections and interactive elements */
+.review-widget img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-links li a {
+    color: #003e6b;
+    text-decoration: none;
+    border: 1px solid #003e6b;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-links li a:hover {
+    background-color: #003e6b;
+    color: #fff;
+}
+
+button.hcp-button {
+    background-color: #003e6b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+button.hcp-button:hover {
+    background-color: #005998;
+}
+
+#book-online, #reviews, #realwork, #connect {
+    margin: 40px 0;
+    text-align: center;
+}
