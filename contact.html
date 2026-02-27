@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us – Cole Air Inc.</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Cole Air Inc.</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="ac.html">Air Conditioning</a>
+            <a href="heating.html">Heating</a>
+            <a href="refrigeration.html">Refrigeration</a>
+            <a href="additional-services.html">Additional Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Get In Touch</h1>
+        <p>Ready to schedule service or have a question?  Fill out the form below and we’ll get back to you as soon as possible.</p>
+    </div>
+
+    <div class="container">
+        <form class="contact-form" method="post" action="#">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="service">Service Requested</label>
+            <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="ac">Air Conditioning</option>
+                <option value="heating">Heating</option>
+                <option value="refrigeration">Refrigeration</option>
+                <option value="additional">Additional Services</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit Request</button>
+        </form>
+
+        <p style="text-align: center; margin-top: 30px;">Alternatively, call us at <strong>(555) 123-4567</strong> or email <strong>info@coleair.net</strong>.</p>
+    </div>
+
+    <footer>
+        <p>© <span id="year"></span> Cole Air Inc. • HVAC &amp; Refrigeration Experts • Lake Charles, LA</p>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>
